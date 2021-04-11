@@ -14,14 +14,16 @@ import { AuthGuard } from './auth/auth.guard';
 import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-// import { AuthLayoutComponent } from './layout/auth-layout.component';
+import { AuthLayoutComponent } from './layout/auth-layout.component';
+import { MainLayoutComponent } from './layout/main-layout.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MemberComponent,
     HomepageComponent,
-    // AuthLayoutComponent
+    AuthLayoutComponent,
+    MainLayoutComponent
   ],
   imports: [
     BrowserModule,
