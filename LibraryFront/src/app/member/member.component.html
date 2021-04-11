@@ -1,0 +1,53 @@
+<div class="subject">CREATE ACCOUNT</div>
+<form [formGroup]="formGroup">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>username</mat-label>
+            <input type="text" name="username" formControlName="isUsername" matInput
+                placeholder="Please Enter Username">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>password</mat-label>
+            <input type="text" name="password" formControlName="isPassword" matInput
+                placeholder="Please Enter Password">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>re-password</mat-label>
+            <input type="text" name="re-password" formControlName="isRePassword" matInput
+                placeholder="Please Enter Re Password">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>name</mat-label>
+            <input type="text" name="name" formControlName="isName" matInput placeholder="Please Enter Name">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>surname</mat-label>
+            <input type="text" name="surname" formControlName="isSurname" matInput placeholder="Please Enter Surname">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>birthday</mat-label>
+            <input type="date" name="birthday" formControlName="isBirthday" matInput
+                placeholder="Please Enter Birthday">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>e-mail</mat-label>
+            <input type="email" name="e-mail" formControlName="isEmail" matInput placeholder="Please Enter E-mail">
+        </mat-form-field>
+    </div>
+    <div class="btn">
+        <button class="btn-cancel" type="submit" (click)="clickCancel()">CANCEL</button>
+        <button class="btn-reg" type="submit" (click)="clickSave()">SAVE</button>
+    </div>
+</form>

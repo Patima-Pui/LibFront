@@ -1,0 +1,23 @@
+<div class="logo">
+  <img src="../assets/bookicon.png" class="logo-img" />
+  <div class="logo-text">LIBRARY</div>
+</div>
+
+<form>
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Username</mat-label>
+      <input type="text" [(ngModel)]="isUsername" name="username" matInput placeholder="Username">
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input type="password" [(ngModel)]="isPassword" name="password" matInput placeholder="Password">
+    </mat-form-field>
+  </div>
+  <div class="btn">
+    <div class="tag-reg" (click)="clickRegister()">Create account</div>
+    <button class="btn-login" type="submit" (click)="clickLogin()">Login</button>
+  </div>
+</form>
