@@ -16,6 +16,9 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthLayoutComponent } from './layout/auth-layout.component';
 import { MainLayoutComponent } from './layout/main-layout.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,10 @@ import { MainLayoutComponent } from './layout/main-layout.component';
     FormsModule,
     RouterModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTabsModule,
+    MatIconModule,
+    MatDividerModule
 
   ],
   providers: [AuthService, AuthGuard, {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}],
