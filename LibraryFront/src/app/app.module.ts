@@ -19,6 +19,7 @@ import { MainLayoutComponent } from './layout/main-layout.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { HomecontentComponent } from './homecontent/homecontent.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MemberComponent,
     HomepageComponent,
     AuthLayoutComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    HomecontentComponent
   ],
   imports: [
     BrowserModule,
